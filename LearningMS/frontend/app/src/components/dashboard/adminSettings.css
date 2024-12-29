@@ -1,0 +1,264 @@
+/* Page Styling */
+.admin-settings-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  /* Menu Styling */
+  .admin-settings-menu {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    background-color: #e3f2fd;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .menu-button {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    margin: 0;
+    position: relative;
+  }
+  
+  .menu-button.active {
+    background-color: #1565c0;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-button:hover {
+    background-color: #64b5f6;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #1565c0;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  /* Content Area Styling */
+  .admin-settings-content {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Message Styling */
+  .message {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+  
+  /* Course Grid Styling */
+  .course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .course-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(90% - 20px);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: #1a5276;
+  }
+  
+  .course-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .course-card p strong {
+    color: #2c3e50;
+  }
+  
+  .course-card .edit-button {
+    margin-top: 15px;
+    padding: 8px 12px;
+    background-color: #f39c12;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .course-card .edit-button:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Edit Course Form Styling */
+  .edit-course-form {
+    background: #fef9e7;
+    border: 1px solid #f39c12;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .edit-course-form h2 {
+    font-size: 1.5rem;
+    color: #d35400;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .edit-course-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333333;
+  }
+  
+  .edit-course-form input,
+  .edit-course-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-course-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .edit-course-form .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-course-form .save-button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .edit-course-form .save-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-course-form .cancel-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .edit-course-form .cancel-button:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admin-settings-menu {
+      flex-wrap: wrap;
+    }
+  
+    .menu-button {
+      flex: 1 1 calc(50% - 10px);
+      margin: 5px;
+    }
+  
+    .course-card {
+      flex: 1 1 100%;
+    }
+  
+    .edit-course-form .button-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .edit-course-form .save-button,
+    .edit-course-form .cancel-button {
+      width: 100%;
+    }
+  }
+  

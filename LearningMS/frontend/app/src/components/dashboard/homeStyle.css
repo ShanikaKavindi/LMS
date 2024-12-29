@@ -1,0 +1,155 @@
+.home-page {
+  text-align: center; /* Center-aligns heading */
+  padding: 20px;
+  background-color: #f4f6f8; /* Light background for the page */
+}
+
+.home-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #274869; /* Dark blue for heading */
+  padding: 10px 0; /* Vertical padding for heading */
+  border: 2px solid #042670; /* Border around the heading */
+  border-radius: 30px; /* Ellipse-shaped border */
+  width: 90%; /* Adjust width for responsiveness */
+  max-width: 1200px; /* Limit the maximum width */
+  margin: 0 auto 30px; /* Center and add spacing below */
+  background-color: #e3f2fd; /* Light blue background for heading */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for heading */
+}
+
+/* Courses Section */
+.home-page .course-grid {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Wrap cards to the next row if needed */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center-align cards */
+  padding: 10px;
+}
+
+.home-page .course-card {
+  background: #ffffff; /* White background for card */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+  flex: 1 1 calc(90% - 20px); /* Responsive width (90% of page width minus gap) */
+  max-width: 1200px; /* Maximum width for large screens */
+  margin: 0 auto; /* Center-align card */
+  text-align: left; /* Align content inside the card to the left */
+}
+
+.home-page .course-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Course Name Styling */
+.home-page .course-card h2 {
+  margin: 0 0 15px;
+  font-size: 1.5rem;
+  color: #1a5276;
+}
+
+/* Description Styling */
+.home-page .course-card p {
+  margin: 8px 0; /* Consistent spacing between paragraphs */
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Highlighted Labels (e.g., Code, Description) */
+.home-page .course-card p strong {
+  color: #2c3e50; /* Dark grey for labels */
+}
+
+/* Instructor Name in Blue */
+.home-page .course-card p:last-of-type {
+  color: #1a73e8; /* Bright blue for instructor name */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+/* Enroll Button */
+.home-page .course-card .enroll-button {
+  margin-top: 15px; /* Spacing above the button */
+  padding: 10px 15px; /* Internal padding for button */
+  background-color: #6a11cb; /* Purple background */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded button corners */
+  font-size: 1rem; /* Standard font size for button */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  display: block; /* Make button a block-level element */
+  margin-left: auto; /* Align to center */
+  margin-right: auto; /* Align to center */
+}
+
+.home-page .course-card .enroll-button:hover {
+  background-color: #2575fc; /* Blue background on hover */
+}
+
+/* Instructor Section Heading */
+.home-page h1.instructor-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #d35400; /* Darker orange for heading text */
+  padding: 10px 0; /* Vertical padding for heading */
+  border: 2px solid #e67e22; /* Light orange border */
+  border-radius: 30px; /* Ellipse-shaped border */
+  width: 90%; /* Adjust width for responsiveness */
+  max-width: 1200px; /* Limit the maximum width */
+  margin: 0 auto 30px; /* Center and add spacing below */
+  background-color: #fbe4d5; /* Light orange background for heading */
+  box-shadow: 0 4px 8px rgba(255, 140, 0, 0.2); /* Orange-tinted shadow */
+}
+
+
+/* Instructor Section with Light Orange Scheme */
+.home-page .instructor-card {
+  background: #fff4e6; /* Light orange background for card */
+  border: 1px solid #ffcc99; /* Light orange border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+  flex: 1 1 calc(90% - 20px); /* Responsive width (90% of page width minus gap) */
+  max-width: 1200px; /* Maximum width for large screens */
+  margin: 0 auto; /* Center-align card */
+  text-align: left; /* Align content inside the card to the left */
+}
+
+.home-page .instructor-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 5px 15px rgba(255, 204, 153, 0.5); /* Stronger shadow with orange tint */
+}
+
+/* Instructor Name Styling */
+.home-page .instructor-card h2 {
+  margin: 0 0 15px;
+  font-size: 1.5rem;
+  color: #d35400; /* Darker orange for instructor name */
+}
+
+/* Instructor Details Styling */
+.home-page .instructor-card p {
+  margin: 8px 0; /* Consistent spacing between paragraphs */
+  font-size: 1rem;
+  color: #8e44ad; /* Contrasting purple for details */
+}
+
+/* Highlighted Labels (e.g., Designation, Phone, Email) */
+.home-page .instructor-card p strong {
+  color: #ff5733; /* Bright orange for labels */
+}
+
+/* Responsive Design for Instructor Section */
+@media (max-width: 768px) {
+  .home-page .instructor-card {
+    flex: 1 1 100%; /* Full width for small screens */
+  }
+}
+
