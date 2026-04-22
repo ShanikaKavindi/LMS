@@ -1,71 +1,124 @@
-[README.md](https://github.com/user-attachments/files/26961767/README.md)
-# Getting Started with Create React App
+📘 Virtual Learning Management System (LMS)
+🚀 Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Virtual Learning Management System (LMS) is a full-stack web application designed to enhance collaboration and interaction among students in Open and Distance Learning (ODL) environments.
 
-## Available Scripts
+This platform enables students and instructors to connect through virtual study groups, discussions, and online classes, reducing isolation and improving academic engagement.
 
-In the project directory, you can run:
+🎯 Problem Statement
 
-### `npm start`
+Students in ODL environments often face:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Lack of peer interaction
+Limited collaboration opportunities
+Difficulty in accessing structured learning support
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This system addresses these challenges by providing a collaborative and interactive learning platform.
 
-### `npm test`
+🛠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend:
 
-### `npm run build`
+React.js
+JavaScript (ES6+)
+HTML5, CSS3
+Material-UI
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Backend:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Django
+Django REST Framework
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Database:
 
-### `npm run eject`
+SQLite
+✨ Features
+👤 User Management
+User registration and login
+Role-based access (Student / Instructor / Admin)
+📚 Course Management
+Create, edit, and manage courses
+Enroll in courses
+👨‍🏫 Instructor Module
+Manage classes and schedules
+Assign and monitor students
+👥 Study Groups
+Create and join virtual study groups
+Collaborate with peers
+💬 Discussion Forum
+Topic-based discussions
+Post and reply features
+🧪 Quiz & Gamification
+Interactive quizzes
+Leaderboards and engagement features
+📅 Online Classes
+Schedule and attend virtual classes
+🧱 System Design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project follows Software Engineering principles:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Requirement Analysis (interviews, surveys, observations)
+UML Diagrams:
+Use Case Diagram
+Class Diagram
+Activity Diagram
+Modular and scalable architecture
+🗄 Database Design
+Designed using relational database principles
+Normalization applied:
+First Normal Form (1NF)
+Second Normal Form (2NF)
+Third Normal Form (3NF)
+🧪 Testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The system was tested using multiple levels:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Unit Testing
+Integration Testing
+System Testing
+User Acceptance Testing (UAT)
+✔ Sample Test Cases
+User registration
+Login validation
+Course creation
+API data retrieval
+⚡ Performance & Improvements
+Implemented API pagination for better performance
+Improved error handling and validation
+Ensured security using Django ORM
+📸 Screenshots
 
-## Learn More
+(Add your screenshots here — login page, dashboard, courses, etc.)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+⚙️ Installation & Setup
+1. Clone the repository
+git clone https://github.com/ShanikaKavindi/LMS.git
+cd LMS
+2. Frontend Setup (React)
+cd frontend
+npm install
+npm start
+3. Backend Setup (Django)
+cd backend
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+▶️ Usage
+Open browser and go to: http://localhost:3000
+Register as a student or instructor
+Explore courses, groups, and discussions
+🔮 Future Enhancements
+Mobile application support
+Real-time chat (WebSockets)
+AI-based course recommendations
+Advanced analytics dashboard
+📚 References
+React Documentation
+Django Documentation
+Django REST Framework
+Material-UI
+👩‍💻 Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Shanika Kavindi
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub: https://github.com/ShanikaKavindi
